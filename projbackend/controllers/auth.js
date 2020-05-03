@@ -11,7 +11,8 @@ exports.signup = (req, res)=>{
        res.json({
            name : user.firstName,
            email: user.email,
-           id : user._id
+           id : user._id,
+           last_name: user.lastName
 
        });
    })
